@@ -28,7 +28,7 @@ public class HomeController {
 		return "home1.jsp";	
 	}
 	
-//	@RequestMapping("/about")
+//	@RequestMapping("/hi")
 //	public String about(@RequestParam("name") String about, HttpSession session) {
 //		System.out.println("hi "+ about);
 //		session.setAttribute("about", about);
@@ -63,6 +63,12 @@ public class HomeController {
 		System.out.println("form");
 		return "Form.jsp";
 	}
+	@RequestMapping("/MutualFundLumpsumCalculator")
+	public String MutualFundLumpsumCalculator() {
+		System.out.println("MutualFundLumpsumCalculator");
+		return "MutualFundLumpsumCalculator.jsp";
+	}
+	
 	@RequestMapping("/about")
 	public String about() {
 		System.out.println("about");
@@ -87,5 +93,10 @@ public class HomeController {
 	public String index() {
 		System.out.println("index");
 		return "index.jsp";
+	}
+	@RequestMapping("/TextFileReader")
+	public String TextFileReader() {
+		System.out.println("TextFileReader");
+		return "TextFileData.jsp";
 	}
 }
