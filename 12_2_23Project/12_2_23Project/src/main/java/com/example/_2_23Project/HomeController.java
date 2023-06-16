@@ -73,6 +73,11 @@ public class HomeController {
 		System.out.println("formResult");
 		return "formResult.jsp";
 	}
+	@RequestMapping("/showMapTileBounds")
+	public String showMapTilebounds() {
+		System.out.println("showMapTileBounds");
+		return "showMapTileBounds.jsp";
+	}
 	@RequestMapping("/form1")
 	public String form1() {
 		System.out.println("form1");
